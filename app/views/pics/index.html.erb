@@ -1,15 +1,17 @@
-
-<div class= "span4 offset4 steamy-hottube center" >
-	<body>
-		<h2>
-			<% @pics.each do |pic| %>
+<% @pics.each do |pic| %>
+	<div class= "span4 offset4 steamy-hottube center" >
+		<body>
+			<h1>
 				Hour:<%= pic.hour %>
 				<br/>
+			</h1>
+			<h2>
 				Emotion:<%= pic.emotion %>
 				<br/>
 				Learned: <%= pic.learned %>
 				<br/>
-			<% end %>
-		</h2>
-	</body>
-</div>
+			</h2>
+		</body>
+	</div>	
+<% end %>
+
