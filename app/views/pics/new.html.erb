@@ -1,0 +1,10 @@
+<div class="span4 offset4 steamy-hottube text-center">
+<h2> Enter your Pic</h2>
+<%= simple_form_for @pic do |f| %>
+	<%= f.input :hour, :placeholder => '1, 2, 3, etc', :label => 'Enter the hour' %>
+	<%= f.input :emotion, :placeholder => 'Happy, Stoked, Pumped, etc', :label => 'Enter the emotion' %>
+	<%= f.input :learned, :placeholder => 'HTML, CSS, Rails, Heroku', :label => 'Enter what you learned' %>
+	<%= f.submit 'Save', :class => 'btn btn-primary btn-large' %>
+<% end %>
+
+</div>
